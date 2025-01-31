@@ -4,10 +4,6 @@ const cors = require("cors");
 const app = express();
 app.use(cors());
 
-app.use((req, res) => {
-	res.status(404).json({ error: "Route not found" });
-});
-
 app.get("/", (req, res) => {
 	try {
 		res.status(200).json({
@@ -19,6 +15,11 @@ app.get("/", (req, res) => {
 		res.status(500).json({ error: "internal server error" });
 	}
 });
+
+app.use((req, res) => {
+	res.status(404).json({ error: "Route not found" });
+});
+
 const port = process.env.PORT || 2000;
 
 app.listen(port, () => {
