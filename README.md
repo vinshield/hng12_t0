@@ -13,26 +13,27 @@ This is a simple public API that returns basic information, including the regist
 
 ### **Endpoint**
 
-### **Request Format**
+### Request Format
 
 To retrieve the API response, send a **GET request** to the endpoint.
 
 #### **Example Using cURL**
 
-````sh
+```sh
 curl -X GET https://your-deployment-url.com/
 
 `GET /`
+```
 
-### **Response Format (200 OK)**
+### Response Format (200 OK)
 
-```json
+```sh
 {
 	"email": "your-email@example.com",
 	"current_datetime": "2025-01-30T09:30:00Z",
 	"github_url": "https://github.com/yourusername/your-repo"
 }
-````
+```
 
 ## Setup Instructions
 
@@ -59,7 +60,13 @@ The server should start on `http://localhost:2000/`
 
 ## Live API URL
 
+`https://hng12-t0.vercel.app/`
+
 ## Reference
 
 Click the link below to find and hire backend developers.
 [Hire Nodejs developers](https://hng.tech/hire/nodejs-developers)
+
+```
+
+```
